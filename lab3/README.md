@@ -1,6 +1,6 @@
 ## file0
 
-**includes file correction with Java commentaries**\n
+**includes file correction with Java commentaries**<br/> 
 **corrections to BookTest, Book, PersonTest, and Person files**
 
 ## file1
