@@ -1,0 +1,10 @@
+Great job on Lab2! Lab2 grade : 1 (pass). Lab grade is either 1 (pass) or 0 (fail).
+
+Here are some suggestions that might be helpful:
+
+1. For the exercise No.5, the age of the author should be calculated in a new method, not return the year of birth of the 
+author.
+
+2. For the insertionSort, when comparing, you can use compareTo() method to simplify the process.
+
+Feedback provided by Tianhui Li, li.tianhu@husky.neu.edu.
