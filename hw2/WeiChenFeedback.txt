@@ -1,0 +1,64 @@
+Assignment 2 feedback for Wei Chen
+
+Notes: 
+-Class name should be uppercase (Vector3D rather than vector3D)
+
+-Should not have an empty constructor here or a constructor for
+"other" vector - "other" will use the same constructor - this is 
+because a constructor is merely a way for someone to create an instance
+of the object (in this case Vector3D), so you use the same constructor
+for any instance of the method. In some cases, you will have alternate 
+constructors if they take other arguments, but you will never need an
+empty one or one with the same values. 
+
+-The constructor should not use "setX" or setter methods, to
+set the values, use the structure this.x = x; this.y = y; this.z = z;
+and so forth. The setter methods are for outside users to set these 
+values after the instance of the object has already been created.
+-3 points for constructor
+
+-You didn't need to create setter methods or an equals method,
+but great for doing that! For your equals method - doing 
+ if (this == o) return true;
+is not actually what you want - this is what the 
+default equals method does and will not return the
+answer you want. 
+A good equals method would look like:
+public boolean equals(Object o) {
+        if (!(o instanceof Vector3D)) return false;
+        Vector3D vector3D = (Vector3D) o;
+        return this.x == o.getX() &&
+               this.y == o.getY() &&
+               this.z == o.getZ();
+    }
+Similar to yours but not exactly!
+
+-In your Junit tests, you can use @Before and setUp() to
+set up objects to be used in all the methods, instead of 
+having to create testVector multiple times. 
+
+
+
+Tests passed:
+
+-getMagnitude
+-add
+-getX, getY, getZ
+-angleBetween
+-dotProduct
+-multiply
+-normalize
+
+Tests failed:
+
+-toString: this was correct, but you formatted it slightly
+different than the example in the homework prompt (x, y, z) with
+spaces rather than (x,y,z). Not a big deal and no points off, but 
+in the future it's best to follow the instructions as 
+closely as possible to prevent your tests from failing.
+
+Overall, great job! A helpful tip is to do multiple tests of each
+test instead of just one or two - just to make sure your method works
+as expected for all cases and edge cases, not just some.
+
+Grade: 97
