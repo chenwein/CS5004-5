@@ -1,0 +1,24 @@
+Grade: Passed
+Good job with the Lab!
+
+Some things to point out:
+
+1. In your constructor class (and to answer your question), you need to check and if the denomicator is <=0, throw an exception. Your try and catch
+   statement will be in written in your main code where you are calling the method. In your main code, when you are calling your constructor, and
+   if the constructor return the exception to the main code, that is where you want to catch any exception thrown and handle accordingly.
+
+2. You do not need to call the setter method in your constructor. As Marked posted on Piazza, it's not really a good idea to have setter methods in
+   your constructor or any other methods within the class. The setter and getter methods are typically used in a different class that would be using
+   your Fraction class to access the individual member data.
+
+   Within the class itself, you can directly access the numerator and denominator members by
+   calling this.numerator or this.denominator. So your constructor class would look something like:
+   public Fraction (int num, int den){
+      this.num = num;
+      this.den = den;
+   } 
+
+3. For junit testing, please make sure each method has the same name as the method you are testing from the main class. Also, it's best to
+   have multiple tests for each method instead of just one test for the entire code
+
+Thanks for adding Java docs comments to the Person & Book class!
