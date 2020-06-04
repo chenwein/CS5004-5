@@ -1,0 +1,5 @@
+## List vs ArrayList
+
+List is a subinterface in java which extends from the Collection interface
+and an ArrayList is a class that is extended from the interface List.
+When declaring a reference variable, it is best to use it's supertype  such as List for passing ArrayList, taking advantage of POlymorphism. Since List can take in all its subtype i.e. linkedList, Vector etc. YOu can easily translate a subtype arraylist into a linked list without affecting the codebase.

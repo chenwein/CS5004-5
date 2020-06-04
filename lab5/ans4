@@ -1,0 +1,40 @@
+### Multiple inheritance is not supported in java,  
+
+“extends” keyword applies to abstract classes and concrete classes, whereas it is okay to “implement” multiple interfaces.
+The problem with multiple inheritance is that when you create methods with the same signature in both the parent class and child class, there is a ambiguity as to which method to be called. It becomes a compilation error. Or called the diamond problem.
+
+For example:
+
+```java
+
+Class animal {
+
+	void bark() { 
+	//implementation
+	}
+
+class dog1 {
+	void bark(){
+		//implementation
+	}
+}
+
+class dog2{
+	void bark(){
+		//implementation
+	}
+}
+
+class smallDog extends dog1, dog2 {
+	//extending both parents classes
+}
+
+//driver method
+//instantiate a new smallDog object
+smallDog testDog = new smallDog();
+smallDog.bark() // compile error 
+
+}
+
+```
+
