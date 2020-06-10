@@ -1,0 +1,22 @@
+Assignment3 Grade & Feedback for WeiNien Chen
+
+Test passed:
+- overlap()
+- union()
+- toString()
+
+Test failed:
+- intersect()
+
+Problems & Suggestions:
+constructor:
+- 1pt   Height and width cannot be 0
+
+intersect():
+- 2pt   For the height and width, you forget to minus them with x/y
+
+Overall, great job on your assignment 3! The code is concise and readable. The
+logic and structure is clear. The test is very detailed, considering all the
+cases. And the comment is meaningful.
+
+Grade: 97 / 100
