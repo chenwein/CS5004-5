@@ -6,9 +6,9 @@ public class OrderedListImpl implements OrderedList{
     private ListNode head;
     private int maxSize;
     private int size;
-    public OrderedListImpl(int maxSize, ListNode head) {
+    public OrderedListImpl(int maxSize) {
         this.maxSize = maxSize;
-        this.head = head;
+        this.head = null;
         size = 0;
     }
     public OrderedListImpl(ListNode head) {
