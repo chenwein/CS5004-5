@@ -62,22 +62,18 @@ public class OrderedListImpl implements OrderedList{
 
     @Override
     public void add(int val) {
-        if(this.getMax() < val) {
-            ListNode newNode = new ListNode(val);
-            ListNode dummy = new ListNode(-1);
-            dummy.next = head;
-            ListNode prev = dummy;
-            ListNode traversePointer = head;
-            while (traversePointer != null && val > traversePointer.value) {
-                traversePointer = traversePointer.next;
-                prev = prev.next;
-            }
-            prev.next = newNode;
-            size++;
+        ListNode newNode = new ListNode(val);
+        ListNode dummy = new ListNode(-1);
+        dummy.next = head;
+        ListNode prev = dummy;
+        ListNode traversePointer = head;
+        while (traversePointer != null && val > traversePointer.value) {
+            traversePointer = traversePointer.next;
+            prev = prev.next;
         }
-        else {
-            return;
-        }
+        prev.next = newNode;
+        newNode.next = traversePointer;
+        size++;
     }
 
     @Override
