@@ -62,6 +62,17 @@ public class OrderedListImpl implements OrderedList{
 
     @Override
     public void add(int val) {
+          if (size == maxSize) {
+            //1 3 4 6 add(5)
+            if (val > head.value) {
+                head = head.next;
+                this.size--;
+                //5 > 1 , so we remove 1, and then proceed to add 5
+            } else {
+                return;
+            }
+        }
+        //add 5 here
         ListNode newNode = new ListNode(val);
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
@@ -73,6 +84,7 @@ public class OrderedListImpl implements OrderedList{
         }
         prev.next = newNode;
         newNode.next = traversePointer;
+        head = dummy.next;
         size++;
     }
 
