@@ -1,0 +1,11 @@
+Lab 6 Feedback
+
+Grade: 1/1
+
+Suggestions:
+- GaNonEmptyLinkedList
+1. For addFront() method, it should still return this LinkedList
+2. For findHelper() method in line 91, it should check this.getValue to see if this LinkedList is
+the one we want.
+
+Please add a main() method to test your code.
