@@ -1,0 +1,15 @@
+Grade 1/1 (passed)
+
+Great job on this lab.
+
+Some things to consider:
+
+1. In your addHead method, don't forget you still need to assign the head's previous point to your. By default, your newHead prev is already null. You need
+   to assign your current head's prev to your newHead. From there, you would also need to consider what needs to happen if your current head is null.
+
+2. find Method - consider the case where you looped through the entire list and value is not found
+
+3. remove Method - remember, we are using a doublely linked list so don't forget to set the prev pointers too!
+
+4. In your reversedCopy method, you can utilize both the addHead/addTail methods as well as the head/tail member fields to return reverse copy.
+   It doesn't need to be too complicated.
