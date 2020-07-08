@@ -1,0 +1,10 @@
+Project Idea:
+
+Since we don't have a lot of time, I would have to be realistic with the type of project that I would work on.
+
+I wanted to create a Java program that can handles actions from only ONE user. Seeing what the previous class has worked on, I believe that a game with not too complicated interactions and scoring capabilities would be a good idea. The other idea I have is to build a simple shopping cart system, like a SNKRS app, but that would be less interesting.
+
+With the game idea, users can perform a few simple actions - moving, scoring, pause game, enter game, exit game
+Things to consider:
+- end conditions of game
+- obstacles?
