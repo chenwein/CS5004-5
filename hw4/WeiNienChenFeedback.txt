@@ -1,0 +1,27 @@
+Asssignment 4 Feedback for Wei Nien Chen
+
+Points breakdown:
+Constructor: 6/12
+addTerm: 12/12
+removeTerm: 12/12
+getDegree: 12/12
+getCoefficient: 12/12
+evaluate: 12/12
+add: 12/12
+toString: 11/12
+
+Exception throws and private vs public: 4/4
+
+Notes:
+1. You are missing a constructor that takes a string as an argument and parses it
+into a linked list. You can use regex for this. 
+
+2. For toString, please make sure you follow the format exactly.
+For example, the expected format is: 5x^2 + 4x^1 + -2, and yours is 5X^2+4X^1 -2, 
+which caused a lot of tests to fail. This is important for future assignments so please
+try to take care to be accurate. 
+
+
+Overall, great job, just make sure to follow the directions closely!
+Grade: 93/100
+
