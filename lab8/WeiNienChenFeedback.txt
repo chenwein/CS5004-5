@@ -1,0 +1,25 @@
+Feedback for Wei Nien Chen
+Lab 8
+
+Notes:
+I think you forgot to upload your ListNode java file?
+
+For addInt, you don't need to put things in order
+because sets are usually in random order. 
+Also, I see how you are checking for duplicates,
+but it may be easier to just check if the item is
+already in the set before adding it. Right now, you add method
+fails for some cases - I think something in either addInt or removeRep is 
+not quite right. Also, if there is a duplicate, it should return false
+when removed, but yours returns true. 
+
+For remove, you need to check the edge case of it being the head.
+If not, then you prev is still null when you say prev.next = curr.next,
+and you get a null pointer exception because you cannot call null.next.
+
+I think you are missing the union method - not necessary for the grade but
+good practice if you have time. 
+
+Overall, good job, but make sure you test your methods
+because it's very easy to run into null pointer exception
+with linked lists.
