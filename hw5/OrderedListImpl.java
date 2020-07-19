@@ -126,18 +126,17 @@ public class OrderedListImpl implements OrderedList{
     }
 
 
-    @Override
+   @Override. //correction to remove
     public void remove(int val) {
-        ListNode dummy = new ListNode(-1);
-        dummy.next = head;
-        ListNode prev = dummy;
+        ListNode prev = null;
         ListNode traversePointer = head;
         while (traversePointer != null && val != traversePointer.value) {
+            prev = traversePointer;
             traversePointer = traversePointer.next;
-            prev = prev.next;
+
         }
-        if(traversePointer == null) {
-            return;
+        if(prev == null) {
+            head = head.next;
         }
         else {
             prev.next = traversePointer.next;
@@ -225,15 +224,16 @@ public class OrderedListImpl implements OrderedList{
         return size;
     }
 
-    @Override
+  @Override //correction toString
     public String toString() {
-        String result = "";
+        String result = "[";
         ListNode traverserPointer = head;
         while (traverserPointer != null) {
             result = result + Integer.toString(traverserPointer.value) + " ";
             traverserPointer = traverserPointer.next;
         }
-        return result;
+        String questionMarks = "? ".repeat(this.maxSize - this.size);
+        return (result + questionMarks).trim() + "]";
     }
 
     @Override
