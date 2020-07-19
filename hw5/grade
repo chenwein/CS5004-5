@@ -1,0 +1,8 @@
+toString doesn't have ? -3
+
+output : 3 3 5 6 8 after removing 3 from 3 3 5 6 8. Removal doesn't work correctly. -5
+
+output 3 3 5 6 6 8 after adding 6 to 3 3 5 6 8. No capacity control. -3
+
+
+54/65
