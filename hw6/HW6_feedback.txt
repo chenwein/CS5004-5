@@ -1,0 +1,10 @@
+Assignment 6 grading & feedback
+
+20pts for each task.
+
+99 / 100
+
+Task 4
+- 1pt, getTopOne() should return player id
+
+created by Tianhui Li
